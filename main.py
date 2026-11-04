@@ -5,13 +5,13 @@ from g4f.client import Client
 import secrets
 
 app = Flask(__name__)
-app.secret_key = secrets.token_hex(32)  # безопасный ключ для сессий
+app.secret_key = secrets.token_hex(32)  # secure session key
 client = Client()
 lock = threading.Lock()
 
-# Ограничение частоты запросов (в секундах)
+# Request rate limit (in seconds)
 RATE_LIMIT_SECONDS = 1
-last_request_time = 0  # Глобальная переменная для ограничения частоты запросов
+last_request_time = 0  # Global variable for request rate limiting
 
 prompt_template = """Составь рацион питания на 1 день с учетом следующих параметров:
 
