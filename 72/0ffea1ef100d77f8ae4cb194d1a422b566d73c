@@ -1,0 +1,19 @@
+main.py
+  s_c5582b25068b6c::t_d554f946dbe7d1 8,12,14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "720ffea1ef100d77f8ae4cb194d1a422b566d73c",
+  "prompts": {},
+  "sessions": {
+    "s_c5582b25068b6c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0d7da30a-75e4-48f3-95fe-7b0ba84e7910",
+        "model": "unknown"
+      },
+      "human_author": "vlad <Fortuneq@bwg-io.site>"
+    }
+  }
+}
